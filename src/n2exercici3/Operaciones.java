@@ -1,6 +1,5 @@
 package n2exercici3;
 
-//TODO preguntar si era esto lo que habia que hacer con el ejercicio, o si se se referia a un switch dentro del lambda
 public class Operaciones {
     public static float sumar(float a, float b){
         IOperaciones iOperaciones = () -> a + b;
@@ -18,7 +17,6 @@ public class Operaciones {
     }
 
     public static float dividir(float a, float b){
-        //Acá debería haber ido una excepcion
         IOperaciones iOperaciones = () -> b != 0 ? a / b : 0;
         if (b == 0)
             System.out.println("La division no fue posible");
